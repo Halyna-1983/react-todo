@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TodoList from './components/TodoList';
+import Immutable from './components/TodoList/Immutable';
 import './App.css';
 
 class App extends Component {
@@ -31,7 +32,8 @@ class App extends Component {
       <p>Кількість виконаних: {completedTodos}</p>
     </div>
 
-    <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
+      <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
+      <Immutable/>
     </>
   );
 }
